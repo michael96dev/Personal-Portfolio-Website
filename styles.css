@@ -1,0 +1,15 @@
+body {
+    background:linear-gradient(to right, #9696b0, #53ade5);
+   
+}
+
+
+.card {
+    background:image(file-earmark-person-fill);
+}
+
+.navbar-brand{
+   font-size: 40px;
+  
+
+}
