@@ -10,22 +10,23 @@
 <body class="bg-transparent" >
     <div >
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <div class="container-fluid shadow-lg">
+            <div class="container-fluid shadow-lg justify-content-start">
                 <a href="#intro" class="navbar-brand  "><span class="fw-bold text-body">Michael Mutisya</span></a>
 
-                    <button  type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav" 
+                    <button  type="button" class="navbar-toggler justify-content-end align-end" data-bs-toggle="collapse" data-bs-target="#main-nav" 
                         aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                    <div class="container-fluid collapse navbar-collapse justify-content-end align-center" id="main-nav">
                         <div class="navbar-nav">
                  <ul class="navbar-nav">
                     <li class="nav-item"><a href="#Bio" class="nav-item nav-link active">Bio</a></li>
                     <li class="nav-item"><a href="#professional" class="nav-item nav-link">Professional Summary</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-item nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#education" class="nav-item nav-link ">Education</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-item nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#contacts" class="nav-item nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#referees" class="nav-item nav-link">Referees</a></li>
                 </ul>
                 </div>
             </div>
@@ -54,9 +55,9 @@
         <div class="container-lg bg-transparent my-5  p-5 border-dark rounded shadow-lg">
             <img src="mortarboard.svg" height="40px" alt="">
             <H1>Education</H1>
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role='tablist'>
-                    <button class="nav-link active" id="nav-university-tab" data-bs-toggle="tab"
+            <nav class="border-dark">
+                <div class="nav nav-tabs border-dark" id="nav-tab" role='tablist'>
+                    <button class="nav-link active " id="nav-university-tab" data-bs-toggle="tab"
                     data-bs-target="#nav-university" type="button" role="tab" aria-controls="nav-university"
                     aria-selected="true">University</button>
                     <button class="nav-link " id="nav-highschool-tab" data-bs-toggle="tab"
@@ -76,6 +77,7 @@
                         <li>Degree - Bachelors in Information Science</li>
                         <li>University Name- Jomo Kenyatta University of Agriculture and Technology</li>
                         <li>Graduation Year- November 2024</li>
+                        <li>Second class Lower division</li>
                         <li>Relevant course work- WebDev, Data management, Information Systems,Technology Integration</li>
                         <li>Self Taught Skills- Learned Programming languages like Python, JavaScript</li>
                     </ul></div>
@@ -106,8 +108,10 @@
         <img src="tools.svg" height="40px" alt="">
         <H1>Skills</H1>
         <div class="row justify-content-around text-body background-transparent">
-            <div class="col-3">
-                <div class="card">
+
+            <!--cards-->
+            <div class="col-md-12 col-lg-4 mt-2 "><!--100% width for small screens-->
+                <div class="card h-100 bg-transparent border-transparent shadow-lg">
                 <div class="card-body ">
                 <h5 class="card-title">Programming languages</h5>
                 <ul class="text-body">
@@ -117,46 +121,49 @@
                 </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="card h-100">
-                <div class="card-body bg-transparent">
+            <div class="col-md-12 col-lg-4 mt-2"><!--100% width for small screens-->
+                <div class="card h-100 bg-transparent border-transparent shadow-lg">
+                <div class="card-body ">
                 <h5 class="card-title">Frameworks</h5>
-                <ul class="text-muted">
-                    <li>Django</li>
-                    <li>React</li>
+                <ul class="">
+                    <li>Node.js</li>
+                    <li>React.js</li>
+                    <li>Bootstrap</li>
                 </ul>
                 </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="card h-100">
-                <div class="card-body bg-transparent">
+            <div class="col-md-12 col-lg-4 mt-2 border-dark"> <!--100% width for small screens-->
+                <div class="card h-100 bg-transparent border-transparent shadow-lg">
+                <div class="card-body ">
                 <h5 class="card-title">Database</h5>
-                <ul class="text-muted">
+                <ul class="">
                     <li>MySQL</li>
+                    <li>MongoDb</li>
                 </ul>
                 </div>
                 </div>
             </div>
         </div>
-        <div class="row mt-2 justify-content-around">
-            <div class="col-3">
-                <div class="card h-100">
-                <div class="card-body bg-transparent ">
+        <div class="row  justify-content-around">
+
+            <div class="col-md-12 col-lg-4 mt-2"><!--100% width for small screens-->
+                <div class="card h-100 bg-transparent border-transparent shadow-lg">
+                <div class="card-body  ">
                 <h5 class="card-title">Tools</h5>
-                <ul class="text-muted">
+                <ul class="">
                     <li>Git</li>
                     <li>Visual Studio Code</li>
                 </ul>
                 </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="card h-100">
+            <div class="col-md-12 col-lg-4 mt-2"><!--100% width for small screens-->
+                <div class="card h-100 bg-transparent border-transparent shadow-lg">
                 <div class="card-body bg-transparent h-25">
                 <h5 class="card-title">Others</h5>
-                <ul class="text-muted">
-                    <li>Independent Learnintransparent
+                <ul class="">
+                    <li>Independent Learning</li>
                     <li>Debugging</li>
                     <li>Problem Solving</li>
                 </ul>
@@ -169,22 +176,20 @@
 <section class="contacts" id="contacts">
     <div class="container-lg bg-transparent my-5  p-5 border-dark rounded shadow-lg">
         <img src="file-earmark-person-fill.svg" height="40px" alt="">
-        <h1>Contacts</h1>
+        <h2>Contacts</h2>
         <p>For my contact details, click the button below</p>
-        <button class="btn btn-primary" data-bs-target="#contact-modal" data-bs-toggle="modal">Contact me</button>
+        <!--Button to open Modal-->
+        <button class="btn btn-primary" data-bs-target="#contact-modal" data-bs-toggle="modal" type="button">Contact me</button>
     </div>
 </section>
 
-    <!--modal for contacting me with an input form-->
-    <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <!--modal for contacting-->
+    <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modal-label" aria-hidden="true">
         <div class="modal-dialogue">
             <div class="modal-content">
-                <d
-                
-                
-                iv class="modal-header">
-                    <h5 class="modal-title" id="modal-title">These are my contacts</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contact-modal-label">These are my contacts</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class= "modal-body">
                     <ul>
@@ -193,12 +198,55 @@
                         <li>P. O BOX - 1003-80115</li>
                     </ul>
                 </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                </div>
             </div>
         </div>
     </div>
     </div>
-    <footer class="p-2  text-dark text-center  border-dark rounded shadow-lg"><p>Michael Mutisya</p></footer>
-    <script src="js/bootstrap.js">
+    <section class="referees" id="referees">
+        <div class="container-lg bg-transparent my-5  p-5 border-dark rounded shadow-lg">
+            <h2>Referees</h2>
+            <div class="row  justify-content-around">
+            <div class="col-md-12 col-lg-4 mt-2"><!--100% width for small screens-->
+                <div class="card h-100 bg-transparent border-transparent shadow-lg">
+                <div class="card-body ">
+                    <h3>Mr.David Chege</h3>
+                <ul class="">
+                    <li><span class="fw-bold fst-italic">Teacher</span>, Nyeri Highschool</li>
+                    <li>TEL - +254720930475</li>
+                </ul>
+                </div>
+                </div>
+                </div>
+                <div class="col-md-12 col-lg-4 mt-2"><!--100% width for small screens-->
+                    <div class="card h-100 bg-transparent border-transparent shadow-lg">
+                    <div class="card-body ">
+                        <h3>Dr.Mary Wachira</h3>
+                    <ul class="">
+                        <li><span class="fw-bold fst-italic">Lecturer</span>, JKUAT</li>
+                        <li>TEL- +254724355347</li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-12 col-lg-4 mt-2"><!--100% width for small screens-->
+                    <div class="card h-100 bg-transparent border-transparent shadow-lg">
+                    <div class="card-body ">
+                        <h3>Mr.Gosden Keya</h3>
+                    <ul class="">
+                        <li><span class="fw-bold fst-italic">Technician</span>, Novia Tech Juja</li>
+                        <li>TEL- +254785987825</li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    <footer class="p-2  text-dark text-center  border-dark rounded shadow-lg"><p class="fst-italic">Michael Mutisya</p></footer>
+    <script src="js/bootstrap.min.js">
     </script>
 </body>
 </html>
